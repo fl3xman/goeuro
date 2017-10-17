@@ -27,7 +27,10 @@ extension Trip {
         
         fileprivate lazy var sortList:SortAction = { [unowned self] in
             return SortAction { [unowned self] sort in
-                return self.list.producer.map { Trip.sorted(by: sort, sortable: $0) }
+                
+                return SignalProducer<[DataModel],NoError>(value:
+                    Trip.sorted(by: sort, sortable: self.list.value)
+                )
             }
         }()
         
