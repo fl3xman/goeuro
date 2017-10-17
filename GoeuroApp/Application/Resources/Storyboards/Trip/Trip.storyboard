@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eOy-yD-Ibw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trip List View Controller-->
+        <scene sceneID="SiH-MH-L12">
+            <objects>
+                <viewController id="TG9-lx-enw" customClass="TripListViewController" customModule="GoeuroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NGW-Mv-tfu"/>
+                        <viewControllerLayoutGuide type="bottom" id="EUq-r9-gK3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qDb-tV-NiD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DIT-iF-LMN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DIT-iF-LMN" secondAttribute="trailing" id="IuK-Ls-DXR"/>
+                            <constraint firstItem="EUq-r9-gK3" firstAttribute="top" secondItem="DIT-iF-LMN" secondAttribute="bottom" id="VuG-EU-Q0d"/>
+                            <constraint firstItem="DIT-iF-LMN" firstAttribute="top" secondItem="NGW-Mv-tfu" secondAttribute="bottom" id="af6-G7-HDT"/>
+                            <constraint firstItem="DIT-iF-LMN" firstAttribute="leading" secondItem="qDb-tV-NiD" secondAttribute="leading" id="w85-N4-NE2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EL1-Kb-J1M"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="swinjectRegistrationName" value="trains"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="DIT-iF-LMN" id="4pa-P4-QGC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kT-ib-2Vw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903.20000000000005" y="-856.82158920539734"/>
+        </scene>
+        <!--Trip List View Controller-->
+        <scene sceneID="MSg-9m-FPE">
+            <objects>
+                <viewController id="WOj-A8-CEH" customClass="TripListViewController" customModule="GoeuroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uBI-mU-ong"/>
+                        <viewControllerLayoutGuide type="bottom" id="AEi-I4-UCZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ox-QT-gIa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-AM-cuP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AEi-I4-UCZ" firstAttribute="top" secondItem="xrr-AM-cuP" secondAttribute="bottom" id="S5O-VQ-mGF"/>
+                            <constraint firstItem="xrr-AM-cuP" firstAttribute="leading" secondItem="3ox-QT-gIa" secondAttribute="leading" id="U62-bL-tkM"/>
+                            <constraint firstAttribute="trailing" secondItem="xrr-AM-cuP" secondAttribute="trailing" id="iWr-QO-hLF"/>
+                            <constraint firstItem="xrr-AM-cuP" firstAttribute="top" secondItem="uBI-mU-ong" secondAttribute="bottom" id="viH-9j-zOT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gVx-ka-QvN"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="swinjectRegistrationName" value="flights"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="xrr-AM-cuP" id="cIM-Ib-Qzd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q86-aJ-2UB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903.20000000000005" y="-1511.6941529235382"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WD2-XP-HzH">
+            <objects>
+                <tabBarController id="eOy-yD-Ibw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="plj-ZU-qfk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kTq-vQ-zmv" kind="relationship" relationship="viewControllers" id="yis-nN-FdF"/>
+                        <segue destination="XaY-En-f9g" kind="relationship" relationship="viewControllers" id="896-Bc-8i3"/>
+                        <segue destination="oM6-ST-j3I" kind="relationship" relationship="viewControllers" id="GNi-7e-s69"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAb-YL-l7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3617" y="-510"/>
+        </scene>
+        <!--Flights-->
+        <scene sceneID="7Rv-TD-VPP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kTq-vQ-zmv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Flights" id="DX1-hj-lxU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rb3-TZ-XX6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WOj-A8-CEH" kind="relationship" relationship="rootViewController" id="10X-N1-Jd3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jg1-kS-W5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1842.4000000000001" y="-1511.6941529235382"/>
+        </scene>
+        <!--Trains-->
+        <scene sceneID="BlM-YL-tW4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XaY-En-f9g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trains" id="FfY-n1-dwZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YlG-Qe-Egc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TG9-lx-enw" kind="relationship" relationship="rootViewController" id="F9R-Hd-Agf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSW-BI-Ho5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1844" y="-792"/>
+        </scene>
+        <!--Trip List View Controller-->
+        <scene sceneID="KS7-u0-kH9">
+            <objects>
+                <viewController id="buE-Ht-cRf" customClass="TripListViewController" customModule="GoeuroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K3w-eZ-efY"/>
+                        <viewControllerLayoutGuide type="bottom" id="sop-mT-3Wu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v3Z-B2-v69">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="esc-6G-35z">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sop-mT-3Wu" firstAttribute="top" secondItem="esc-6G-35z" secondAttribute="bottom" id="SLj-zd-6ic"/>
+                            <constraint firstItem="esc-6G-35z" firstAttribute="top" secondItem="K3w-eZ-efY" secondAttribute="bottom" id="UUM-Ta-vgw"/>
+                            <constraint firstItem="esc-6G-35z" firstAttribute="leading" secondItem="v3Z-B2-v69" secondAttribute="leading" id="VsC-Mb-5wh"/>
+                            <constraint firstAttribute="trailing" secondItem="esc-6G-35z" secondAttribute="trailing" id="tzQ-uB-1K9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D5l-CO-eyG"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="swinjectRegistrationName" value="buses"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="esc-6G-35z" id="2jU-Oq-wCn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocR-Ay-qQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-905" y="-137"/>
+        </scene>
+        <!--Buses-->
+        <scene sceneID="3xu-OE-Y0J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oM6-ST-j3I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Buses" id="BKJ-cr-ApB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3vd-mT-aaO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="buE-Ht-cRf" kind="relationship" relationship="rootViewController" id="KLI-g5-cBC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ke-q8-kH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1845" y="-50"/>
+        </scene>
+    </scenes>
+</document>

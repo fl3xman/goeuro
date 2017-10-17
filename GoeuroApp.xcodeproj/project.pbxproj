@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94148A091F95E91A009C28A5 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 94148A081F95E91A009C28A5 /* placeholder.png */; };
+		94276F841F94B42400AEC1BD /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F831F94B42400AEC1BD /* Api.swift */; };
+		94276F861F94B64F00AEC1BD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F851F94B64F00AEC1BD /* Errors.swift */; };
+		94276F881F94B69400AEC1BD /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F871F94B69400AEC1BD /* TripModel.swift */; };
+		94276F8A1F94B6DE00AEC1BD /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F891F94B6DE00AEC1BD /* TripService.swift */; };
+		94276F8C1F94B95500AEC1BD /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F8B1F94B95500AEC1BD /* Trip.swift */; };
+		94276F8E1F94D1EF00AEC1BD /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F8D1F94D1EF00AEC1BD /* Mapping.swift */; };
+		94276F901F94D43400AEC1BD /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F8F1F94D43400AEC1BD /* TripViewModel.swift */; };
+		94276F921F94D7C800AEC1BD /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F911F94D7C800AEC1BD /* TripListViewController.swift */; };
+		94276F941F94D8D800AEC1BD /* TripSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F931F94D8D800AEC1BD /* TripSort.swift */; };
+		94276F981F94DF5000AEC1BD /* TripAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F971F94DF5000AEC1BD /* TripAssembly.swift */; };
+		94276F9A1F94E41600AEC1BD /* TripViewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94276F991F94E41600AEC1BD /* TripViewBinding.swift */; };
+		94276F9D1F94EDAB00AEC1BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94276F9C1F94EDAB00AEC1BD /* AppDelegate.m */; };
+		94276FA11F94F01C00AEC1BD /* Trip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94276FA01F94F01C00AEC1BD /* Trip.storyboard */; };
+		949825831F94AB3D00F259E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 949825821F94AB3D00F259E8 /* main.m */; };
+		9498258E1F94AB3D00F259E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9498258D1F94AB3D00F259E8 /* Assets.xcassets */; };
+		949825911F94AB3D00F259E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9498258F1F94AB3D00F259E8 /* LaunchScreen.storyboard */; };
+		94EAB1DE1F94FEA90003F82B /* TripListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EAB1DC1F94FEA90003F82B /* TripListItem.swift */; };
+		94EAB1DF1F94FEA90003F82B /* TripListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EAB1DD1F94FEA90003F82B /* TripListItem.xib */; };
+		CFFD36E0B14AA9DE4BF75588 /* Pods_GoeuroApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B356240E23922D0A833275F /* Pods_GoeuroApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30506F342724A6320879CDCC /* Pods-GoeuroApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoeuroApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoeuroApp/Pods-GoeuroApp.release.xcconfig"; sourceTree = "<group>"; };
+		8B2A4B7BBF8C94B1715B3225 /* Pods-GoeuroApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoeuroApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoeuroApp/Pods-GoeuroApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8B356240E23922D0A833275F /* Pods_GoeuroApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoeuroApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94148A081F95E91A009C28A5 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		94276F831F94B42400AEC1BD /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		94276F851F94B64F00AEC1BD /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		94276F871F94B69400AEC1BD /* TripModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		94276F891F94B6DE00AEC1BD /* TripService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
+		94276F8B1F94B95500AEC1BD /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		94276F8D1F94D1EF00AEC1BD /* Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		94276F8F1F94D43400AEC1BD /* TripViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		94276F911F94D7C800AEC1BD /* TripListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
+		94276F931F94D8D800AEC1BD /* TripSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripSort.swift; path = ../../Support/TripSort.swift; sourceTree = "<group>"; };
+		94276F971F94DF5000AEC1BD /* TripAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripAssembly.swift; sourceTree = "<group>"; };
+		94276F991F94E41600AEC1BD /* TripViewBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripViewBinding.swift; path = ../TripViewBinding.swift; sourceTree = "<group>"; };
+		94276F9B1F94EDAB00AEC1BD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		94276F9C1F94EDAB00AEC1BD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		94276FA01F94F01C00AEC1BD /* Trip.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trip.storyboard; sourceTree = "<group>"; };
+		9498257E1F94AB3D00F259E8 /* GoeuroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoeuroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		949825821F94AB3D00F259E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9498258D1F94AB3D00F259E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		949825901F94AB3D00F259E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		949825921F94AB3D00F259E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		949825981F94AC5B00F259E8 /* GoeuroApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoeuroApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		94EAB1DC1F94FEA90003F82B /* TripListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripListItem.swift; sourceTree = "<group>"; };
+		94EAB1DD1F94FEA90003F82B /* TripListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripListItem.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9498257B1F94AB3D00F259E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFD36E0B14AA9DE4BF75588 /* Pods_GoeuroApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11935BFA2C29077300CF8077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B2A4B7BBF8C94B1715B3225 /* Pods-GoeuroApp.debug.xcconfig */,
+				30506F342724A6320879CDCC /* Pods-GoeuroApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94148A071F95E91A009C28A5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				94148A081F95E91A009C28A5 /* placeholder.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		94276F751F94B41000AEC1BD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				94276F761F94B41000AEC1BD /* Classes */,
+				94276F821F94B41000AEC1BD /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		94276F761F94B41000AEC1BD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94276F771F94B41000AEC1BD /* Assembly */,
+				94276F781F94B41000AEC1BD /* Delegate */,
+				94276F791F94B41000AEC1BD /* Models */,
+				94276F7D1F94B41000AEC1BD /* Support */,
+				94276F7E1F94B41000AEC1BD /* ViewModels */,
+				94276F801F94B41000AEC1BD /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		94276F771F94B41000AEC1BD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				94276F971F94DF5000AEC1BD /* TripAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		94276F781F94B41000AEC1BD /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				94276F9B1F94EDAB00AEC1BD /* AppDelegate.h */,
+				94276F9C1F94EDAB00AEC1BD /* AppDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		94276F791F94B41000AEC1BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94276F7A1F94B41000AEC1BD /* Trip */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94276F7A1F94B41000AEC1BD /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				94276F7B1F94B41000AEC1BD /* Objects */,
+				94276F7C1F94B41000AEC1BD /* Services */,
+				94276F8B1F94B95500AEC1BD /* Trip.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		94276F7B1F94B41000AEC1BD /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				94276F871F94B69400AEC1BD /* TripModel.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		94276F7C1F94B41000AEC1BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				94276F891F94B6DE00AEC1BD /* TripService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		94276F7D1F94B41000AEC1BD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				94276F831F94B42400AEC1BD /* Api.swift */,
+				94276F851F94B64F00AEC1BD /* Errors.swift */,
+				94276F8D1F94D1EF00AEC1BD /* Mapping.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		94276F7E1F94B41000AEC1BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				94276F7F1F94B41000AEC1BD /* Trip */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		94276F7F1F94B41000AEC1BD /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				94276F931F94D8D800AEC1BD /* TripSort.swift */,
+				94276F991F94E41600AEC1BD /* TripViewBinding.swift */,
+				94276F8F1F94D43400AEC1BD /* TripViewModel.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		94276F801F94B41000AEC1BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94276F811F94B41000AEC1BD /* Trip */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94276F811F94B41000AEC1BD /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				94EAB1DB1F94FE6F0003F82B /* Items */,
+				94276F911F94D7C800AEC1BD /* TripListViewController.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		94276F821F94B41000AEC1BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94148A071F95E91A009C28A5 /* Images */,
+				94276F9E1F94F00A00AEC1BD /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94276F9E1F94F00A00AEC1BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				94276F9F1F94F00A00AEC1BD /* Trip */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		94276F9F1F94F00A00AEC1BD /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				94276FA01F94F01C00AEC1BD /* Trip.storyboard */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		949825751F94AB3D00F259E8 = {
+			isa = PBXGroup;
+			children = (
+				949825801F94AB3D00F259E8 /* GoeuroApp */,
+				9498257F1F94AB3D00F259E8 /* Products */,
+				11935BFA2C29077300CF8077 /* Pods */,
+				D21AA19AAE3BB86A57019529 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9498257F1F94AB3D00F259E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9498257E1F94AB3D00F259E8 /* GoeuroApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		949825801F94AB3D00F259E8 /* GoeuroApp */ = {
+			isa = PBXGroup;
+			children = (
+				94276F751F94B41000AEC1BD /* Application */,
+				9498258D1F94AB3D00F259E8 /* Assets.xcassets */,
+				9498258F1F94AB3D00F259E8 /* LaunchScreen.storyboard */,
+				949825921F94AB3D00F259E8 /* Info.plist */,
+				949825811F94AB3D00F259E8 /* Supporting Files */,
+				949825981F94AC5B00F259E8 /* GoeuroApp-Bridging-Header.h */,
+			);
+			path = GoeuroApp;
+			sourceTree = "<group>";
+		};
+		949825811F94AB3D00F259E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				949825821F94AB3D00F259E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94EAB1DB1F94FE6F0003F82B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				94EAB1DC1F94FEA90003F82B /* TripListItem.swift */,
+				94EAB1DD1F94FEA90003F82B /* TripListItem.xib */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		D21AA19AAE3BB86A57019529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B356240E23922D0A833275F /* Pods_GoeuroApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9498257D1F94AB3D00F259E8 /* GoeuroApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949825951F94AB3D00F259E8 /* Build configuration list for PBXNativeTarget "GoeuroApp" */;
+			buildPhases = (
+				DAC25BB21AF8FA84C1D32E0D /* [CP] Check Pods Manifest.lock */,
+				9498257A1F94AB3D00F259E8 /* Sources */,
+				9498257B1F94AB3D00F259E8 /* Frameworks */,
+				9498257C1F94AB3D00F259E8 /* Resources */,
+				FE050FA52A9E2A1C58B8B370 /* [CP] Embed Pods Frameworks */,
+				CFF8A9875B4B84DC525EFA28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoeuroApp;
+			productName = GoeuroApp;
+			productReference = 9498257E1F94AB3D00F259E8 /* GoeuroApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		949825761F94AB3D00F259E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Michal Grman";
+				TargetAttributes = {
+					9498257D1F94AB3D00F259E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 949825791F94AB3D00F259E8 /* Build configuration list for PBXProject "GoeuroApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 949825751F94AB3D00F259E8;
+			productRefGroup = 9498257F1F94AB3D00F259E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9498257D1F94AB3D00F259E8 /* GoeuroApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9498257C1F94AB3D00F259E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94276FA11F94F01C00AEC1BD /* Trip.storyboard in Resources */,
+				949825911F94AB3D00F259E8 /* LaunchScreen.storyboard in Resources */,
+				9498258E1F94AB3D00F259E8 /* Assets.xcassets in Resources */,
+				94148A091F95E91A009C28A5 /* placeholder.png in Resources */,
+				94EAB1DF1F94FEA90003F82B /* TripListItem.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFF8A9875B4B84DC525EFA28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoeuroApp/Pods-GoeuroApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC25BB21AF8FA84C1D32E0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE050FA52A9E2A1C58B8B370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoeuroApp/Pods-GoeuroApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9498257A1F94AB3D00F259E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94276F9A1F94E41600AEC1BD /* TripViewBinding.swift in Sources */,
+				94276F981F94DF5000AEC1BD /* TripAssembly.swift in Sources */,
+				94EAB1DE1F94FEA90003F82B /* TripListItem.swift in Sources */,
+				94276F841F94B42400AEC1BD /* Api.swift in Sources */,
+				94276F8E1F94D1EF00AEC1BD /* Mapping.swift in Sources */,
+				94276F8A1F94B6DE00AEC1BD /* TripService.swift in Sources */,
+				94276F861F94B64F00AEC1BD /* Errors.swift in Sources */,
+				94276F941F94D8D800AEC1BD /* TripSort.swift in Sources */,
+				94276F881F94B69400AEC1BD /* TripModel.swift in Sources */,
+				94276F8C1F94B95500AEC1BD /* Trip.swift in Sources */,
+				94276F921F94D7C800AEC1BD /* TripListViewController.swift in Sources */,
+				94276F9D1F94EDAB00AEC1BD /* AppDelegate.m in Sources */,
+				94276F901F94D43400AEC1BD /* TripViewModel.swift in Sources */,
+				949825831F94AB3D00F259E8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9498258F1F94AB3D00F259E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949825901F94AB3D00F259E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		949825931F94AB3D00F259E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		949825941F94AB3D00F259E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		949825961F94AB3D00F259E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2A4B7BBF8C94B1715B3225 /* Pods-GoeuroApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5LKLPG48TU;
+				INFOPLIST_FILE = GoeuroApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goeuro.GoeuroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoeuroApp/GoeuroApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		949825971F94AB3D00F259E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30506F342724A6320879CDCC /* Pods-GoeuroApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5LKLPG48TU;
+				INFOPLIST_FILE = GoeuroApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goeuro.GoeuroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoeuroApp/GoeuroApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		949825791F94AB3D00F259E8 /* Build configuration list for PBXProject "GoeuroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949825931F94AB3D00F259E8 /* Debug */,
+				949825941F94AB3D00F259E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949825951F94AB3D00F259E8 /* Build configuration list for PBXNativeTarget "GoeuroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949825961F94AB3D00F259E8 /* Debug */,
+				949825971F94AB3D00F259E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 949825761F94AB3D00F259E8 /* Project object */;
+}
