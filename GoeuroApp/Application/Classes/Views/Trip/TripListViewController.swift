@@ -98,7 +98,23 @@ class TripListViewController: UIViewController {
 }
 
 
-extension TripListViewController: UITableViewDelegate {}
+extension TripListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let vm = self.viewModel else { return }
+        
+        let item = vm.bindListItem(at: indexPath)
+        
+        let alert = UIAlertController(title: "Trip", message: "\(item.dateText) - \(item.priceText)", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        
+        alert.addAction(action)
+        self.present(alert, animated: true)
+        
+    }
+}
 
 extension TripListViewController: UITableViewDataSource {
     
