@@ -9,7 +9,9 @@
 
 import Result
 import ReactiveSwift
+import ReactiveCocoa
 import Alamofire
+import UIKit
 
 public protocol TripListViewProvider {
     
@@ -20,9 +22,9 @@ public protocol TripListViewProvider {
     var errors:Signal<ServiceError,NoError> { get }
     
     func refresh(by force:Bool)
-    func sort(by sort:Trip.Sort)
     
-    func item(at indexPath:IndexPath) -> TripListItemViewProvider
+    func bindListSort(to item:Reactive<UIBarButtonItem>) 
+    func bindListItem(at indexPath:IndexPath) -> TripListItemViewProvider
 }
 
 public protocol TripListItemViewProvider {

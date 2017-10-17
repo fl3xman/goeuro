@@ -22,15 +22,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DIT-iF-LMN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kg6-C1-ywz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem tag="1" title="Departure" style="plain" id="Ie5-bw-0W3"/>
+                                    <barButtonItem tag="2" title="Arrival" style="plain" id="yme-Pn-1xj"/>
+                                    <barButtonItem tag="3" title="Duration" style="plain" id="Jgh-BY-oKS"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kg6-C1-ywz" firstAttribute="leading" secondItem="qDb-tV-NiD" secondAttribute="leading" id="Clo-Et-fDj"/>
                             <constraint firstAttribute="trailing" secondItem="DIT-iF-LMN" secondAttribute="trailing" id="IuK-Ls-DXR"/>
                             <constraint firstItem="EUq-r9-gK3" firstAttribute="top" secondItem="DIT-iF-LMN" secondAttribute="bottom" id="VuG-EU-Q0d"/>
-                            <constraint firstItem="DIT-iF-LMN" firstAttribute="top" secondItem="NGW-Mv-tfu" secondAttribute="bottom" id="af6-G7-HDT"/>
+                            <constraint firstItem="DIT-iF-LMN" firstAttribute="top" secondItem="kg6-C1-ywz" secondAttribute="bottom" id="YoE-sD-qTp"/>
+                            <constraint firstItem="DIT-iF-LMN" firstAttribute="top" secondItem="NGW-Mv-tfu" secondAttribute="bottom" constant="44" id="af6-G7-HDT"/>
+                            <constraint firstAttribute="trailing" secondItem="kg6-C1-ywz" secondAttribute="trailing" id="mb4-mi-EFA"/>
+                            <constraint firstItem="kg6-C1-ywz" firstAttribute="top" secondItem="NGW-Mv-tfu" secondAttribute="bottom" id="pxW-Oe-ER6"/>
                             <constraint firstItem="DIT-iF-LMN" firstAttribute="leading" secondItem="qDb-tV-NiD" secondAttribute="leading" id="w85-N4-NE2"/>
                         </constraints>
                     </view>
@@ -40,6 +52,7 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="tableView" destination="DIT-iF-LMN" id="4pa-P4-QGC"/>
+                        <outlet property="toobar" destination="kg6-C1-ywz" id="gb4-do-jzZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kT-ib-2Vw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,16 +72,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-AM-cuP">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-2B-sIC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem tag="1" title="Departure" style="plain" id="hKY-up-K9l"/>
+                                    <barButtonItem tag="2" title="Arrival" style="plain" id="z83-k3-BTp"/>
+                                    <barButtonItem tag="3" title="Duration" style="plain" id="fb3-bx-C9a"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xrr-AM-cuP" firstAttribute="top" secondItem="vm6-2B-sIC" secondAttribute="bottom" id="8Jj-Oi-liD"/>
+                            <constraint firstItem="vm6-2B-sIC" firstAttribute="leading" secondItem="3ox-QT-gIa" secondAttribute="leading" id="8Rr-nx-bQg"/>
+                            <constraint firstAttribute="trailing" secondItem="vm6-2B-sIC" secondAttribute="trailing" id="C7W-I0-Iw3"/>
+                            <constraint firstItem="vm6-2B-sIC" firstAttribute="top" secondItem="uBI-mU-ong" secondAttribute="bottom" id="H87-Vg-EuK"/>
                             <constraint firstItem="AEi-I4-UCZ" firstAttribute="top" secondItem="xrr-AM-cuP" secondAttribute="bottom" id="S5O-VQ-mGF"/>
                             <constraint firstItem="xrr-AM-cuP" firstAttribute="leading" secondItem="3ox-QT-gIa" secondAttribute="leading" id="U62-bL-tkM"/>
                             <constraint firstAttribute="trailing" secondItem="xrr-AM-cuP" secondAttribute="trailing" id="iWr-QO-hLF"/>
-                            <constraint firstItem="xrr-AM-cuP" firstAttribute="top" secondItem="uBI-mU-ong" secondAttribute="bottom" id="viH-9j-zOT"/>
+                            <constraint firstItem="xrr-AM-cuP" firstAttribute="top" secondItem="uBI-mU-ong" secondAttribute="bottom" constant="44" id="viH-9j-zOT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gVx-ka-QvN"/>
@@ -77,6 +102,7 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="tableView" destination="xrr-AM-cuP" id="cIM-Ib-Qzd"/>
+                        <outlet property="toobar" destination="vm6-2B-sIC" id="dGt-S4-7Gg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q86-aJ-2UB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -153,15 +179,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="esc-6G-35z">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pM-DN-oG6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem tag="1" title="Departure" style="plain" id="kU4-f0-X9B"/>
+                                    <barButtonItem tag="2" title="Arrival" style="plain" id="gqb-0M-9PH"/>
+                                    <barButtonItem tag="3" title="Duration" style="plain" id="YGm-AF-hBX"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="esc-6G-35z" firstAttribute="top" secondItem="2pM-DN-oG6" secondAttribute="bottom" id="J3D-AJ-L5b"/>
+                            <constraint firstItem="2pM-DN-oG6" firstAttribute="leading" secondItem="v3Z-B2-v69" secondAttribute="leading" id="Jgb-UU-KhQ"/>
                             <constraint firstItem="sop-mT-3Wu" firstAttribute="top" secondItem="esc-6G-35z" secondAttribute="bottom" id="SLj-zd-6ic"/>
-                            <constraint firstItem="esc-6G-35z" firstAttribute="top" secondItem="K3w-eZ-efY" secondAttribute="bottom" id="UUM-Ta-vgw"/>
+                            <constraint firstItem="esc-6G-35z" firstAttribute="top" secondItem="K3w-eZ-efY" secondAttribute="bottom" constant="44" id="UUM-Ta-vgw"/>
                             <constraint firstItem="esc-6G-35z" firstAttribute="leading" secondItem="v3Z-B2-v69" secondAttribute="leading" id="VsC-Mb-5wh"/>
+                            <constraint firstItem="2pM-DN-oG6" firstAttribute="top" secondItem="K3w-eZ-efY" secondAttribute="bottom" id="if1-yN-p6K"/>
+                            <constraint firstAttribute="trailing" secondItem="2pM-DN-oG6" secondAttribute="trailing" id="jeJ-dT-yRh"/>
                             <constraint firstAttribute="trailing" secondItem="esc-6G-35z" secondAttribute="trailing" id="tzQ-uB-1K9"/>
                         </constraints>
                     </view>
@@ -171,11 +209,12 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="tableView" destination="esc-6G-35z" id="2jU-Oq-wCn"/>
+                        <outlet property="toobar" destination="2pM-DN-oG6" id="jIB-XY-vUg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocR-Ay-qQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-905" y="-137"/>
+            <point key="canvasLocation" x="-906.39999999999998" y="-137.18140929535232"/>
         </scene>
         <!--Buses-->
         <scene sceneID="3xu-OE-Y0J">

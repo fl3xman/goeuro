@@ -14,6 +14,7 @@ import Alamofire
 
 extension Trip {
     
+    fileprivate typealias SortAction = Action<Sort,[DataModel],NoError>
     
     public class ListViewModel {
         
@@ -22,17 +23,26 @@ extension Trip {
         fileprivate let api:API
         fileprivate let getList:APIAction
         fileprivate let list = MutableProperty<[DataModel]>([])
-        fileprivate var sort = Sort.duration
+        fileprivate let sort = MutableProperty<Sort>(.duration)
+        
+        fileprivate lazy var sortList:SortAction = { [unowned self] in
+            return SortAction { [unowned self] sort in
+                return self.list.producer.map { Trip.sorted(by: sort, sortable: $0) }
+            }
+        }()
         
         public init(service:Service, api:API) {
             self.service = service
             self.api = api
             
             self.getList = self.service.reactive.getAll
-            self.list <~ self.getList.values.map{
-                [unowned self] in Trip.sorted(by: self.sort, sortable: $0)
-            }.observe(on: UIScheduler())
+            let a = self.getList.values.map{
+                [unowned self] in Trip.sorted(by: self.sort.value, sortable: $0)
+            }
+            let b = sortList.values
+            self.list <~ Signal.merge([a,b]).observe(on: UIScheduler())
         }
+        
     }
 }
 
@@ -74,7 +84,7 @@ extension Trip.ListViewModel: TripListViewProvider {
     }
     
     public var complete:Signal<Bool, NoError> {
-        return getList.values.map{ !$0.isEmpty }.observe(on: UIScheduler())
+        return list.signal.map{ !$0.isEmpty }.observe(on: UIScheduler())
     }
     
     public var errors:Signal<ServiceError,NoError> {
@@ -85,19 +95,17 @@ extension Trip.ListViewModel: TripListViewProvider {
         return self.list.value.count
     }
     
-    public func item(at indexPath:IndexPath) -> TripListItemViewProvider {
-        return self.list.value[indexPath.item]
-    }
-    
-    public func sort(by sort:Trip.Sort) {
-        self.sort = sort
-        self.list.value = Trip.sorted(by: self.sort, sortable: self.list.value)
-    }
-    
     public func refresh(by force:Bool = false) {
         if (force || self.list.value.isEmpty) {
             getList.apply(self.api).start()
         }
     }
     
+    public func bindListSort(to item:Reactive<UIBarButtonItem>) {
+        item.pressed = CocoaAction(self.sortList) { (Trip.Sort(rawValue:$0.tag) ?? Trip.Sort.duration) }
+    }
+    
+    public func bindListItem(at indexPath:IndexPath) -> TripListItemViewProvider {
+        return self.list.value[indexPath.item]
+    }
 }

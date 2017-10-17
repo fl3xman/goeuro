@@ -23,7 +23,7 @@
     
     [self.window setBackgroundColor:UIColor.whiteColor];
     [self.window makeKeyAndVisible];
-    [self.window setRootViewController:Assembly.resolve];
+    [self.window setRootViewController:GEAssembly.resolve];
     
     return YES;
 }

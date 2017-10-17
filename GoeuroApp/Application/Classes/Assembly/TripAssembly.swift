@@ -10,7 +10,7 @@ import SwinjectAutoregistration
 import Swinject
 import SwinjectStoryboard
 
-@objc
+@objc(GEAssembly)
 public class Assembly: NSObject {
     
     public static func resolve() -> UIViewController? {

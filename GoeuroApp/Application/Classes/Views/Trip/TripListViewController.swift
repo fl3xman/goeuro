@@ -14,16 +14,12 @@ import ESPullToRefresh
 class TripListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var toobar: UIToolbar!
     
     var viewModel:TripListViewProvider?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /*
-        let toolbar = TripSort.all.map{
-            UIBarButtonItem(title: $0.description, style: .plain, target: nil, action: nil)
-        }*/
         
         self.tableView.register(UINib(nibName: "\(TripListItem.self)", bundle: nil), forCellReuseIdentifier: TripListItem.Identifier)
         self.tableView.delegate = self
@@ -54,6 +50,9 @@ class TripListViewController: UIViewController {
                 self.handle(withError: error)
         }
         
+        if let items = self.toobar.items {
+            items.forEach{ vm.bindListSort(to: $0.reactive ) }
+        }
         
     }
 
@@ -114,7 +113,7 @@ extension TripListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: TripListItem.Identifier, for: indexPath)
         
         if let binding = cell as? TripListItemViewBinding, let vm = self.viewModel {
-            binding.bind(using: vm.item(at: indexPath))
+            binding.bind(using: vm.bindListItem(at: indexPath))
         }
         
         return cell

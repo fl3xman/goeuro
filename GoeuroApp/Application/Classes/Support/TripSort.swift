@@ -10,10 +10,10 @@ import UIKit
 
 extension Trip {
  
-    public enum Sort: CustomStringConvertible {
-        case departure
-        case arrival
-        case duration
+    public enum Sort: Int, CustomStringConvertible {
+        case departure = 1
+        case arrival = 2
+        case duration = 3
         
         public static var all:[Sort] {
             return [.arrival, .departure, .duration]
